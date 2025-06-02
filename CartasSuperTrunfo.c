@@ -129,22 +129,20 @@ int main() {
     printf("PIB per Capita: : %.2f reais²\n",pib_per_capita_2);
 
 
-    // Apresentação Comparação Dados nível Mestre
+    // Apresentação Comparação Dados nível Novato Desenvolvendo a Lógica do Jogo
     printf("\n\nComparação de Cartas:\n");
 
-    printf("População: Carta 1 venceu (%d)\n",quantidade_populacao>quantidade_populacao_2);
-    
-    printf("Área: Carta 1 venceu (%d)\n",area_territorial > area_territorial_2);
-    
-    printf("PIB: Carta 1 venceu (%d)\n",valor_pib > valor_pib_2);
-    
-    printf("Pontos Turísticos: Carta 1 venceu (%d)\n",quantidade_pontos_turistico > quantidade_pontos_turistico_2);
-    
-    printf("Densidade Populacional: Carta 2 venceu:(%d)\n",densidade_populacao < densidade_populacao_2);
-    
-    printf("PIB per Capita: Carta 1 venceu (%d)\n",pib_per_capita > pib_per_capita_2);
-    
-    printf("Super Poder: Carta 1 venceu (%d)\n",superPoder > superPoder_2);
+    printf("\n\nComparação de Cartas: (Atributo: População)\n");
+
+    printf("Carta 1 - %s: %d\n",nome_cidade,quantidade_populacao);
+
+    printf("Carta 2 - %s: %d\n",nome_cidade_2,quantidade_populacao_2);
+
+    if (quantidade_populacao>quantidade_populacao_2){
+        printf("Resultado: Carta 1 %s venceu!\n",nome_cidade);
+    }else{
+        printf("Resultado: Carta 2 %s venceu!\n",nome_cidade_2);
+    }
 
     return 0;
 }
